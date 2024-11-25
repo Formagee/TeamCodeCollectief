@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Achtergrond{
+    height: 100%;
+    width: 100%;
+    background-image: url(Achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.knoppen{
+    font-size: 150%;
+    font-weight: bold;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.knoppen a{
+    text-decoration: none;
+    color: blue;
+    line-height: 250%;
+    border-radius: 25%;
+    transition: 1.5s;
+    margin-bottom: 1%;
+}
+
+.knoppen a:hover{
+    background-color: black;
+    color: white;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.HetLogo {
+    height: 20%;
+    width: 15%;
+    margin-left: 84%;
+    margin-top: -10%;
+}
+
+.contact-section{
+    padding: 40px 0;
+}
+
+.contact-section h1{
+
+    text-align: center;
+    color: #ddd;
+}
+
+.border{
+
+    width: 100px;
+    height: 10px;
+    background: #34495e;
+    margin: 40px auto;
+}
+
+.contact-form{
+
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 2.0s
+}
+
+.contact-form-text:hover{
+
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+
+    float: right;
+    border: 0;
+    background: #34495e;
+   color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 2.0s;
+}
+
+.contact-form-btn:hover{
+
+    background: #2980b9;
+
+}
