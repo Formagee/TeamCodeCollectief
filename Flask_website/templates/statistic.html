@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block test %}Statistic page{% endblock %}
+
+{% block content %}
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <p><h1>{{msg}}</h1></p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+<img src="{{ url_for('static', filename='regressielijn.jpg') }}" style="height: 600px; width: auto;">
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block test %}Home page{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<h1>Game Bibliotheek</h1>
+<br>
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+{% for game in games %}
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Game name: {{ game.name }}</h5>
+                <p class="card-title">Realease date: {{ game.release_date }}</p>
+                <p class="card-title">Positive ratings: {{game.positive_ratings}}</p>
+                <p class="card-title">Negative ratings: {{game.negative_ratings}}</p>
+                <p class="card-title">Price: €{{ game.price }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
